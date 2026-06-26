@@ -5,21 +5,21 @@
 class SpiffeComplianceChecker < Formula
   desc "Static MUST-clause compliance checker for SPIFFE artifacts (SPIFFE-ID, X.509-SVID, JWT-SVID, Trust Bundle)."
   homepage "https://github.com/kanywst/spiffe-compliance-checker"
-  version "0.0.2"
+  version "0.1.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kanywst/spiffe-compliance-checker/releases/download/v0.0.2/spiffe-compliance-checker_0.0.2_darwin_amd64.tar.gz"
-      sha256 "ef0ff5e668fdb4d55fbd19f9fc54b913a4b8cecb55621c97cea982e44de92236"
+      url "https://github.com/kanywst/spiffe-compliance-checker/releases/download/v0.1.0/spiffe-compliance-checker_0.1.0_darwin_amd64.tar.gz"
+      sha256 "383f8346eccee79f4f42440205367bb073deaff65822288ed324f39cd5a7384a"
 
       define_method(:install) do
         bin.install "scc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kanywst/spiffe-compliance-checker/releases/download/v0.0.2/spiffe-compliance-checker_0.0.2_darwin_arm64.tar.gz"
-      sha256 "f1c6375976aafc5450c1328d93ce0939df135efea5b35cac6ac3a8c835a139ff"
+      url "https://github.com/kanywst/spiffe-compliance-checker/releases/download/v0.1.0/spiffe-compliance-checker_0.1.0_darwin_arm64.tar.gz"
+      sha256 "499b6747a073158a9a01b18341cfae1e99197dcb3355e51c8df0bfb14f322748"
 
       define_method(:install) do
         bin.install "scc"
@@ -29,15 +29,15 @@ class SpiffeComplianceChecker < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kanywst/spiffe-compliance-checker/releases/download/v0.0.2/spiffe-compliance-checker_0.0.2_linux_amd64.tar.gz"
-      sha256 "74952c31f290ad5d975ff9498534e5b835c632348f604e6aaef4b1bf88667382"
+      url "https://github.com/kanywst/spiffe-compliance-checker/releases/download/v0.1.0/spiffe-compliance-checker_0.1.0_linux_amd64.tar.gz"
+      sha256 "1bca3995c297b690b7a49431eb2e3a08a798f83587a2c05e5e230b53a2b0d0c3"
       define_method(:install) do
         bin.install "scc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kanywst/spiffe-compliance-checker/releases/download/v0.0.2/spiffe-compliance-checker_0.0.2_linux_arm64.tar.gz"
-      sha256 "fbb58b4aff78ad1a3b79dfcda5e42b504e04a209d2fae26e52600c6049dc39a6"
+      url "https://github.com/kanywst/spiffe-compliance-checker/releases/download/v0.1.0/spiffe-compliance-checker_0.1.0_linux_arm64.tar.gz"
+      sha256 "bff84d238145d7aa4f7a97ef882b4deb51d5c0a2ab3a8775dcd84e515183f8d5"
       define_method(:install) do
         bin.install "scc"
       end
