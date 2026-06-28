@@ -5,23 +5,23 @@
 class Rapg < Formula
   desc "The Developer-First Secret Manager."
   homepage "https://github.com/kanywst/rapg"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kanywst/rapg/releases/download/v0.3.0/rapg_Darwin_x86_64.tar.gz"
-      sha256 "377b858d9eea6d4a2739e1263629cbd0ed770de906e20d1b55569305b02847a0"
+      url "https://github.com/kanywst/rapg/releases/download/v0.3.1/rapg_Darwin_x86_64.tar.gz"
+      sha256 "901c1f059159f7bccbcd00b1f233769b9829e9b01a2acb19e90bddafa7bae979"
 
-      def install
+      define_method(:install) do
         bin.install "rapg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kanywst/rapg/releases/download/v0.3.0/rapg_Darwin_arm64.tar.gz"
-      sha256 "18c200a666b500b0a875df7ac13e1571831fac97fbc9fa41b7ae25d3f966bbac"
+      url "https://github.com/kanywst/rapg/releases/download/v0.3.1/rapg_Darwin_arm64.tar.gz"
+      sha256 "6aeb5ff95d6af384f8fffe832cb8e9a13f93a843d9522c4c36be830a0a2f0470"
 
-      def install
+      define_method(:install) do
         bin.install "rapg"
       end
     end
@@ -29,24 +29,22 @@ class Rapg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kanywst/rapg/releases/download/v0.3.0/rapg_Linux_x86_64.tar.gz"
-      sha256 "5bf1f2d9e2c838c9e01f6c38473c6c963165ff8f3e6c47fa1f04454210858e49"
-
-      def install
+      url "https://github.com/kanywst/rapg/releases/download/v0.3.1/rapg_Linux_x86_64.tar.gz"
+      sha256 "04748804b966f8fe98a97383151016803a46434a0556393f3d6be9682cab06f3"
+      define_method(:install) do
         bin.install "rapg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kanywst/rapg/releases/download/v0.3.0/rapg_Linux_arm64.tar.gz"
-      sha256 "f1e85c7f59b1506bcb36560f8943c8b1f404f6d04d58c8668c5c6939d66abaed"
-
-      def install
+      url "https://github.com/kanywst/rapg/releases/download/v0.3.1/rapg_Linux_arm64.tar.gz"
+      sha256 "66394a433b8e0865dd3f6ae062f53735e8b6d98777d47a3794a282058f90dcd9"
+      define_method(:install) do
         bin.install "rapg"
       end
     end
   end
 
   test do
-    system "#{bin}/rapg", "gen", "--help"
+    system "#{bin}/rapg gen --help"
   end
 end
