@@ -5,21 +5,21 @@
 class Rapg < Formula
   desc "The Developer-First Secret Manager."
   homepage "https://github.com/kanywst/rapg"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kanywst/rapg/releases/download/v0.3.1/rapg_Darwin_x86_64.tar.gz"
-      sha256 "901c1f059159f7bccbcd00b1f233769b9829e9b01a2acb19e90bddafa7bae979"
+      url "https://github.com/kanywst/rapg/releases/download/v0.3.2/rapg_Darwin_x86_64.tar.gz"
+      sha256 "124f29004efdca9eec3b0c81485ec501ff0b228806a52508b7b6b736be68afc9"
 
       define_method(:install) do
         bin.install "rapg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kanywst/rapg/releases/download/v0.3.1/rapg_Darwin_arm64.tar.gz"
-      sha256 "6aeb5ff95d6af384f8fffe832cb8e9a13f93a843d9522c4c36be830a0a2f0470"
+      url "https://github.com/kanywst/rapg/releases/download/v0.3.2/rapg_Darwin_arm64.tar.gz"
+      sha256 "ac7ca2fcefb7f507acea49b5010dcfad7b1ff4efee3946b315de415850049d26"
 
       define_method(:install) do
         bin.install "rapg"
@@ -29,15 +29,15 @@ class Rapg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kanywst/rapg/releases/download/v0.3.1/rapg_Linux_x86_64.tar.gz"
-      sha256 "04748804b966f8fe98a97383151016803a46434a0556393f3d6be9682cab06f3"
+      url "https://github.com/kanywst/rapg/releases/download/v0.3.2/rapg_Linux_x86_64.tar.gz"
+      sha256 "20289bfede687b9bdde3623bdb8d32b678614e3dc6abc4139de6d08ac7ed6cdc"
       define_method(:install) do
         bin.install "rapg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kanywst/rapg/releases/download/v0.3.1/rapg_Linux_arm64.tar.gz"
-      sha256 "66394a433b8e0865dd3f6ae062f53735e8b6d98777d47a3794a282058f90dcd9"
+      url "https://github.com/kanywst/rapg/releases/download/v0.3.2/rapg_Linux_arm64.tar.gz"
+      sha256 "91e47079f6e67061e6d3a37d3a34b34efe55f9b512c88bdee7badc160b63d5ec"
       define_method(:install) do
         bin.install "rapg"
       end
