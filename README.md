@@ -26,7 +26,6 @@ brew install --cask kanywst/tap/y509
 | ---- | ----------- |
 | [`spiffe-compliance-checker`](https://github.com/kanywst/spiffe-compliance-checker) | Static MUST-clause compliance checker for SPIFFE artifacts, citing the spec section behind each failure |
 | [`wtfi2`](https://github.com/kanywst/wtfi2) | Network-path diagnostic that pinpoints where a Wi-Fi connection dies (macOS only) |
-| [`rapg`](https://github.com/kanywst/rapg) | Local-first secret manager for the AI-agent era (repo archived, last release v0.3.1) |
 | [`approval-hub`](https://github.com/kanywst/approval-hub) | Aggregate Claude Code permission prompts into one TUI (repo archived, last release v0.0.1) |
 
 ## Available casks
@@ -35,6 +34,7 @@ brew install --cask kanywst/tap/y509
 | ---- | ----------- |
 | [`y509`](https://github.com/kanywst/y509) | TUI for viewing and analyzing X.509 certificate chains |
 | [`brtc`](https://github.com/kanywst/brtc) | Cost calculator for offline password brute-force attacks: time and USD per GPU profile |
+| [`rapg`](https://github.com/kanywst/rapg) | Local-first secret manager for the AI-agent era |
 
 ## Verifying a release
 
