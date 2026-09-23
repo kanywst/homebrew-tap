@@ -1,15 +1,15 @@
 class Wtfi2 < Formula
   desc "What The F*ck Internet — a live, visual network path diagnostic that pinpoints exactly where your connection dies."
   homepage "https://github.com/kanywst/wtfi2"
-  version "0.4.0"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kanywst/wtfi2/releases/download/v0.4.0/wtfi2-aarch64-apple-darwin.tar.xz"
-      sha256 "cf20fb80e43823d0e0772dec8d26e4153751f3adc44fadbf3b0ed67c5c322c63"
+      url "https://github.com/kanywst/wtfi2/releases/download/v0.5.0/wtfi2-aarch64-apple-darwin.tar.xz"
+      sha256 "a309beb889363c5be0774e571edc169cbcb466b94307fb91610ec5c030ec8b57"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kanywst/wtfi2/releases/download/v0.4.0/wtfi2-x86_64-apple-darwin.tar.xz"
-      sha256 "a78e7c962d6f56db933a853384e81402b6c1926e6c3d5e7713409f8b47892b59"
+      url "https://github.com/kanywst/wtfi2/releases/download/v0.5.0/wtfi2-x86_64-apple-darwin.tar.xz"
+      sha256 "58b0fad9b5e03625cbd789e1b7de6b1065b12c1d35dc73d3fd5d4731c0eaddc6"
     end
   end
   license "MIT"
