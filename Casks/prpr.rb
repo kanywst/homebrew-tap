@@ -6,25 +6,25 @@ cask "prpr" do
     end
   end
 
-  version "0.1.1"
+  version "0.2.0"
 
   on_macos do
     on_arm do
-      sha256 "58380461d98ae983eff873dcfc56ee4e7369047df89fa352c418fc1d7f8cc982"
+      sha256 "347f3bbb896316db17cdf28763860a68937cc185e3665d1d635858ec22977ceb"
       url "https://github.com/kanywst/prpr/releases/download/v#{version}/prpr-#{version}-darwin-arm64.tar.gz"
     end
     on_intel do
-      sha256 "53f20f5206f8509bf0d1aba1789552fb959b90e6ed9aa45e94a62bb104438045"
+      sha256 "b07fb461e140c639bac96885a24af8e73132e9847a5aabc9832870708f1063e6"
       url "https://github.com/kanywst/prpr/releases/download/v#{version}/prpr-#{version}-darwin-amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "29a92953470ebe19fca157537cc53403e61b8a315c95f6a6635c7ff5bb820c9c"
+      sha256 "d5adb0ce91ff66dbc559f5dad6345a326bdb3649169d447ca35252be2b7efedd"
       url "https://github.com/kanywst/prpr/releases/download/v#{version}/prpr-#{version}-linux-arm64.tar.gz"
     end
     on_intel do
-      sha256 "ffd0d17f71d911c1733eac2bacf638a041f00cc7ef89866652267fa7e6dbd764"
+      sha256 "1b5c9e77b6b2f276a21be851e89fe119f97f8ddde36cd9192d305cb8f083d3fb"
       url "https://github.com/kanywst/prpr/releases/download/v#{version}/prpr-#{version}-linux-amd64.tar.gz"
     end
   end
