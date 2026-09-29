@@ -28,6 +28,8 @@ cask "rapg" do
   desc "Local-first secret manager for the AI-agent era"
   homepage "https://github.com/kanywst/rapg"
 
+  deprecate! date: "2026-09-29", because: :unmaintained
+
   livecheck do
     skip "Auto-generated on release."
   end

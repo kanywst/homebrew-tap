@@ -42,7 +42,7 @@ brew install --cask kanywst/tap/y509
 | ---- | ----------- |
 | [`y509`](https://github.com/kanywst/y509) | TUI for viewing and analyzing X.509 certificate chains |
 | [`brtc`](https://github.com/kanywst/brtc) | Cost calculator for offline password brute-force attacks: time and USD per GPU profile |
-| [`rapg`](https://github.com/kanywst/rapg) | Local-first secret manager for the AI-agent era |
+| [`rapg`](https://github.com/kanywst/rapg) | **Deprecated** (2026-09-29, archiving on or after 2026-12-29). Local-first secret manager for the AI-agent era |
 
 ## Verifying a release
 
