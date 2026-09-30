@@ -1,22 +1,34 @@
 class Wtfi2 < Formula
   desc "What The F*ck Internet — a live, visual network path diagnostic that pinpoints exactly where your connection dies."
   homepage "https://github.com/kanywst/wtfi2"
-  version "0.5.0"
+  version "0.6.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kanywst/wtfi2/releases/download/v0.5.0/wtfi2-aarch64-apple-darwin.tar.xz"
-      sha256 "a309beb889363c5be0774e571edc169cbcb466b94307fb91610ec5c030ec8b57"
+      url "https://github.com/kanywst/wtfi2/releases/download/v0.6.0/wtfi2-aarch64-apple-darwin.tar.xz"
+      sha256 "3954314de0f58d15197070b5986c2d6881a8178620f742120e97449e57ef05cb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kanywst/wtfi2/releases/download/v0.5.0/wtfi2-x86_64-apple-darwin.tar.xz"
-      sha256 "58b0fad9b5e03625cbd789e1b7de6b1065b12c1d35dc73d3fd5d4731c0eaddc6"
+      url "https://github.com/kanywst/wtfi2/releases/download/v0.6.0/wtfi2-x86_64-apple-darwin.tar.xz"
+      sha256 "c36d7ec57c0996d0086026d66b438275291a676cfa3e4d536e00ff22f27983ec"
+    end
+  end
+  if OS.linux?
+    if Hardware::CPU.arm?
+      url "https://github.com/kanywst/wtfi2/releases/download/v0.6.0/wtfi2-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "681f3d3b1db53ac4a88a6707a87adb9cc975c36f550654ce30a5bbc726fd3d56"
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/kanywst/wtfi2/releases/download/v0.6.0/wtfi2-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "cc38559d9d7718c59f0fb575945dbb245b04ab164b39c3c29eb7a858494e3d2b"
     end
   end
   license "MIT"
 
   BINARY_ALIASES = {
-    "aarch64-apple-darwin": {},
-    "x86_64-apple-darwin":  {},
+    "aarch64-apple-darwin":      {},
+    "aarch64-unknown-linux-gnu": {},
+    "x86_64-apple-darwin":       {},
+    "x86_64-unknown-linux-gnu":  {},
   }.freeze
 
   def target_triple
@@ -39,6 +51,12 @@ class Wtfi2 < Formula
       bin.install "wtfi"
     end
     if OS.mac? && Hardware::CPU.intel?
+      bin.install "wtfi"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "wtfi"
+    end
+    if OS.linux? && Hardware::CPU.intel?
       bin.install "wtfi"
     end
 
