@@ -5,21 +5,21 @@
 class McpOpaAuthz < Formula
   desc "Answer agent authorization questions with OPA Rego or an AuthZEN PDP"
   homepage "https://github.com/kanywst/mcp-opa-authz"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kanywst/mcp-opa-authz/releases/download/v0.3.1/mcp-opa-authz-0.3.1-darwin-amd64.tar.gz"
-      sha256 "cf175deec745c13fbbddd26e521250b3254d28d7d06d91c915262b153514225c"
+      url "https://github.com/kanywst/mcp-opa-authz/releases/download/v0.4.0/mcp-opa-authz-0.4.0-darwin-amd64.tar.gz"
+      sha256 "e0c07cea2e49cceb679e43b99d48cf8eaa028f67ee4ccd157a5fb932dcba556a"
 
       define_method(:install) do
         bin.install "mcp-opa-authz"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kanywst/mcp-opa-authz/releases/download/v0.3.1/mcp-opa-authz-0.3.1-darwin-arm64.tar.gz"
-      sha256 "29e648a5abacc7e3ba451460467fcbaac92bfbd7ee9422668b5770a928c9a05c"
+      url "https://github.com/kanywst/mcp-opa-authz/releases/download/v0.4.0/mcp-opa-authz-0.4.0-darwin-arm64.tar.gz"
+      sha256 "56bba550749e1fcf02a7786ea64922160a207d0ce90ca122d56239efcf7bc476"
 
       define_method(:install) do
         bin.install "mcp-opa-authz"
@@ -29,15 +29,15 @@ class McpOpaAuthz < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kanywst/mcp-opa-authz/releases/download/v0.3.1/mcp-opa-authz-0.3.1-linux-amd64.tar.gz"
-      sha256 "ce2a816dfaf56e6c85c866e39a7217a1fced2c304af18d876db4af8ab72dd197"
+      url "https://github.com/kanywst/mcp-opa-authz/releases/download/v0.4.0/mcp-opa-authz-0.4.0-linux-amd64.tar.gz"
+      sha256 "4c630728aa06a22d7ca12be7a6f3790924acc6f31427c2f935030717a7dfcb6d"
       define_method(:install) do
         bin.install "mcp-opa-authz"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kanywst/mcp-opa-authz/releases/download/v0.3.1/mcp-opa-authz-0.3.1-linux-arm64.tar.gz"
-      sha256 "9fd35f40a4aeee0db29ceeb670561170f1fa02037b4f6ae3dab006d1be251071"
+      url "https://github.com/kanywst/mcp-opa-authz/releases/download/v0.4.0/mcp-opa-authz-0.4.0-linux-arm64.tar.gz"
+      sha256 "3042cf89f0a4f6e949fed43f54eef98836350050080d78cbf0865120ea44a54c"
       define_method(:install) do
         bin.install "mcp-opa-authz"
       end
