@@ -6,31 +6,31 @@ cask "whosent" do
     end
   end
 
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     on_arm do
-      sha256 "c02e063eb42f0990e67e0a0a0a5c16793bd3915f31a61e4e0c559370d864b0e8"
+      sha256 "14d4075e11e983012abc118bc493bfa4509b969e39100a0d85843165cd676536"
       url "https://github.com/kanywst/whosent/releases/download/v#{version}/whosent-#{version}-darwin-arm64.tar.gz"
     end
     on_intel do
-      sha256 "a526589071c7f913fbeb4c8cfef0bde254b98c28e9f3f02ba5def5c72912e9c7"
+      sha256 "02beeb4a12e5835bdc487f81d2ac9d7f5925d819983bd12fa39a353936d19713"
       url "https://github.com/kanywst/whosent/releases/download/v#{version}/whosent-#{version}-darwin-amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "5d8c2163854735dfbc7b21d5e21d629bbb24c854f4f253082e34ee8bf5a21bb7"
+      sha256 "f965e10d786f42cea34552eb465de384db506a0efaec71cc9072ee1c3a805960"
       url "https://github.com/kanywst/whosent/releases/download/v#{version}/whosent-#{version}-linux-arm64.tar.gz"
     end
     on_intel do
-      sha256 "e24ce11724b71cf625b6829e65d0032076394594659909bacd214000f3faef70"
+      sha256 "8ff00563782b108da75bba23e8c2b88b11cd772a89606033ca83b8f93cf01bbc"
       url "https://github.com/kanywst/whosent/releases/download/v#{version}/whosent-#{version}-linux-amd64.tar.gz"
     end
   end
 
   name "whosent"
-  desc "Who sent this agent? A TUI for delegation chains: JWT token exchange (act), Biscuit and Mandatum"
+  desc "Who sent this agent? A TUI for delegation chains: JWT token exchange (act), Biscuit, UCAN and Mandatum"
   homepage "https://github.com/kanywst/whosent"
 
   livecheck do
