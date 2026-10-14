@@ -6,25 +6,25 @@ cask "whosent" do
     end
   end
 
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
     on_arm do
-      sha256 "e18c45cf4e4c0ebdaa1d0ce34a0b0f37fbdcbe960b1fe002880c4d26e959f0e7"
+      sha256 "03ce5adba4aae947adb33cad8329b171f93006220b2451a9a939720ff13b872d"
       url "https://github.com/kanywst/whosent/releases/download/v#{version}/whosent-#{version}-darwin-arm64.tar.gz"
     end
     on_intel do
-      sha256 "2baf7900d786c3790b5bf0a5588d072ab49870e7ea310af96cb7647e4e91732a"
+      sha256 "1e2f3a15b2aa2297c22af6f3510c2b9535d58745189a47cb33526e68a3a46024"
       url "https://github.com/kanywst/whosent/releases/download/v#{version}/whosent-#{version}-darwin-amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "b5eeed00072589e68683c78ae309b4169e33000566b260e425291e2209b44d44"
+      sha256 "32c00a923755052ff9e5f33cb5c2f31aa70b35ba5a40a18a243b4dc2bc365c9d"
       url "https://github.com/kanywst/whosent/releases/download/v#{version}/whosent-#{version}-linux-arm64.tar.gz"
     end
     on_intel do
-      sha256 "4336e21368dd80e23920fe68bb1413b5a0b79fd7742b143077fa3bd3f2f1af7b"
+      sha256 "a321981a935ac676c00598cfcc46086ecc3cefa579ee15526acbdd8a88111079"
       url "https://github.com/kanywst/whosent/releases/download/v#{version}/whosent-#{version}-linux-amd64.tar.gz"
     end
   end
