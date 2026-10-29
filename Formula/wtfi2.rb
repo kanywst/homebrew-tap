@@ -1,25 +1,25 @@
 class Wtfi2 < Formula
   desc "What The F*ck Internet — a live, visual network path diagnostic that pinpoints exactly where your connection dies."
   homepage "https://github.com/kanywst/wtfi2"
-  version "0.7.0"
+  version "0.8.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/kanywst/wtfi2/releases/download/v0.7.0/wtfi2-aarch64-apple-darwin.tar.xz"
-      sha256 "72ef4a605c6e4224399ae756b66c94703c1c2c7577c880745dbdad68d8195a0a"
+      url "https://github.com/kanywst/wtfi2/releases/download/v0.8.0/wtfi2-aarch64-apple-darwin.tar.xz"
+      sha256 "a763a3d3528d457e908805af15531d0123a26fad60e0e1f105a174fda09a3bb1"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kanywst/wtfi2/releases/download/v0.7.0/wtfi2-x86_64-apple-darwin.tar.xz"
-      sha256 "336ecf8cc4ec47e622370eea371bbfb56bbd204df2f627724cd017dee9110f1e"
+      url "https://github.com/kanywst/wtfi2/releases/download/v0.8.0/wtfi2-x86_64-apple-darwin.tar.xz"
+      sha256 "8f0c75b000e0c0dba63c00c76980a59c852c2040b9f8fee17ef1a14465c6d474"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/kanywst/wtfi2/releases/download/v0.7.0/wtfi2-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "613ef06797ca8bbf74bfd04167055a2c9228e33be3e267df7852d5c9e86edefd"
+      url "https://github.com/kanywst/wtfi2/releases/download/v0.8.0/wtfi2-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "a485cb089ae0a42a95d69d84e4a00dc8d4a607252e3f429da4beb4c28edbc4c2"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kanywst/wtfi2/releases/download/v0.7.0/wtfi2-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "d6c61f166e2d575eab58c2368b84c4c4def4c5264042518013edb88a24200baf"
+      url "https://github.com/kanywst/wtfi2/releases/download/v0.8.0/wtfi2-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "0d675d9200200b394cf906deb1ea12cce938f357c4f757cbd38da9ea88c654a2"
     end
   end
   license "MIT"
