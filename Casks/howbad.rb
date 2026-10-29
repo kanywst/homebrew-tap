@@ -6,25 +6,25 @@ cask "howbad" do
     end
   end
 
-  version "0.2.1"
+  version "0.3.0"
 
   on_macos do
     on_arm do
-      sha256 "f1f768f5cf3f49d605ee8c6abc5b963ffc8d6655140284d33781565087fa005e"
+      sha256 "501dac7fc6d8f068ba6dba6068749b8af39cd48f462441e46dd8c2e4fbc877ab"
       url "https://github.com/kanywst/howbad/releases/download/v#{version}/howbad-#{version}-darwin-arm64.tar.gz"
     end
     on_intel do
-      sha256 "aa6aa2b805395ab7bfd20ac935c147e12d2689b2847446f88ffd9a68164394a8"
+      sha256 "d3cfdf1e88bfb651785434e262b2b2554d5d49f237468ddf426b3d5051c1d561"
       url "https://github.com/kanywst/howbad/releases/download/v#{version}/howbad-#{version}-darwin-amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "b24b95ce3ec4348b8815218bfe76ebbafec616d340e9aee07372381f4b362d0c"
+      sha256 "4bec81eb1b167fcac3fce702a103c81bc9e8356cad70e9ad6c5b593887bc1300"
       url "https://github.com/kanywst/howbad/releases/download/v#{version}/howbad-#{version}-linux-arm64.tar.gz"
     end
     on_intel do
-      sha256 "820b8647840f606d58ef95d81d4599dc85cf1f549db3120a2864863a60d5af41"
+      sha256 "31602f7802e334f141b8ca09ec0c3a3be4454a2aa05df33110ff1d358420341b"
       url "https://github.com/kanywst/howbad/releases/download/v#{version}/howbad-#{version}-linux-amd64.tar.gz"
     end
   end
