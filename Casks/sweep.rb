@@ -6,25 +6,25 @@ cask "sweep" do
     end
   end
 
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
     on_arm do
-      sha256 "ff7c99f18bd2ee1b441bb18908284cc3a4f1b64b65e0fbcf1c1e45fa87b1dd7d"
+      sha256 "a7595d484025a0022bf79643329eacc7e340ae7e87a7b5d2fe382a549c5db4b2"
       url "https://github.com/kanywst/sweep/releases/download/v#{version}/sweep-#{version}-darwin-arm64.tar.gz"
     end
     on_intel do
-      sha256 "441ca72c19aeb29f754ec29c5b00d2d5eeefe28ce18981374ebd26fa8d3bf2b5"
+      sha256 "45a7fccbc70aa3d3295101161d9f7173e7303cb98f6e1e1a16dba3e36e4837c6"
       url "https://github.com/kanywst/sweep/releases/download/v#{version}/sweep-#{version}-darwin-amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "0cd002da73c385dc35a6dcdde82e0683a1ad022be8c4b410da0f8e1b153aa60e"
+      sha256 "fa1c7f9aa327c024d6e5b47e260b09c4aa264379d9d2854d34c42eeed0b58f06"
       url "https://github.com/kanywst/sweep/releases/download/v#{version}/sweep-#{version}-linux-arm64.tar.gz"
     end
     on_intel do
-      sha256 "f68177060038554ad638ac353ccea0e4fef9a4adc7fecd7b3fe16f5cc537c559"
+      sha256 "a77cd72ca37cb1515ea581d6e8457ead96268edfad4f8e3b7185171f4aeb206a"
       url "https://github.com/kanywst/sweep/releases/download/v#{version}/sweep-#{version}-linux-amd64.tar.gz"
     end
   end
