@@ -37,6 +37,9 @@ cask "sweep" do
     skip "Auto-generated on release."
   end
 
+  # sweep is archived; kanywst/chonk replaces its Caches tab.
+  deprecate! date: "2026-11-04", because: :discontinued
+
   binary "sweep"
 
   # No zap stanza required
