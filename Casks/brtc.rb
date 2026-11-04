@@ -6,25 +6,25 @@ cask "brtc" do
     end
   end
 
-  version "2.3.3"
+  version "2.4.0"
 
   on_macos do
     on_arm do
-      sha256 "2b7814e14b59e2a977b7e04c8f738b6265e46152c82993945455f27fc6d685f9"
+      sha256 "b57a6fd5d3789f7697d65c5c9ed25219a338eba510965f32e8ca81ccb349d1f1"
       url "https://github.com/kanywst/brtc/releases/download/v#{version}/brtc-#{version}-darwin-arm64.tar.gz"
     end
     on_intel do
-      sha256 "01897652023321c1c68dea5ebdb4bb658e19d6f2ae55916982a7237ce8df4e69"
+      sha256 "39e84bc30a02f7c5ca644464254e72d0a248c6d6077e7fa59a7dcca7080132a7"
       url "https://github.com/kanywst/brtc/releases/download/v#{version}/brtc-#{version}-darwin-amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "c6a642d19074d380b6dd05e75e531ee405b4ef2bcfdf52a1229320860db2953d"
+      sha256 "969ffd8c56a6accb345619b3dda8bb0d5998232b9c541125158e05c89203968e"
       url "https://github.com/kanywst/brtc/releases/download/v#{version}/brtc-#{version}-linux-arm64.tar.gz"
     end
     on_intel do
-      sha256 "90e99ea2f6599170f4eea2f9e97db43762579f6528a62d179e091b3bf18f89c1"
+      sha256 "898533651363bd11630fafb898319753f3e5413465c41654e9395a4bf6007019"
       url "https://github.com/kanywst/brtc/releases/download/v#{version}/brtc-#{version}-linux-amd64.tar.gz"
     end
   end
