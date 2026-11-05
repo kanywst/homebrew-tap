@@ -6,25 +6,25 @@ cask "chonk" do
     end
   end
 
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     on_arm do
-      sha256 "7f0a0a3818782312c6ff6d7c07eaf8c4504cfb6ecb5aebff71e7e8b62ae1d3cf"
+      sha256 "21161eba2da036eeb4fecece363c24e9c4d203901992ebc058e306842ee58df6"
       url "https://github.com/kanywst/chonk/releases/download/v#{version}/chonk-#{version}-darwin-arm64.tar.gz"
     end
     on_intel do
-      sha256 "474328e5acb922b9c6340169c14360f5db10d6aa297cf2aa063713f4325633b1"
+      sha256 "b1b5281d92238505cf2019f7956545da1546c155c14fcb582785cbdeb11be9b1"
       url "https://github.com/kanywst/chonk/releases/download/v#{version}/chonk-#{version}-darwin-amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "d3f4e3913cfed0182c2f0b1a11662c73b5983a3f6d90108f0cb2ce17464c3892"
+      sha256 "c05469a7e7902d70a90dc709a12c55ef7bcc8823ae20b76973e4da69846ac88d"
       url "https://github.com/kanywst/chonk/releases/download/v#{version}/chonk-#{version}-linux-arm64.tar.gz"
     end
     on_intel do
-      sha256 "d0b5cbafe9fef6dcebadd8ecef21c31f01787f1ba65ffe176d2b151cb04df242"
+      sha256 "2c17850ddf0ae8189c4633e979a38999114f7679e8a67f2f44cece7068fa77e4"
       url "https://github.com/kanywst/chonk/releases/download/v#{version}/chonk-#{version}-linux-amd64.tar.gz"
     end
   end
