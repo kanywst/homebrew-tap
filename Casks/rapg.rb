@@ -31,6 +31,8 @@ cask "rapg" do
     skip "Auto-generated on release."
   end
 
+  deprecate! date: "2026-09-29", because: :unmaintained
+
   binary "rapg"
 
   postflight do

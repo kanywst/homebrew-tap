@@ -49,7 +49,7 @@ Every tool in the table above except `wtfi2` publishes a checksum file plus a ke
 `rapg` names the file plainly:
 
 ```bash
-gh release download v0.3.3 -R kanywst/rapg -p 'checksums.txt*'
+gh release download v0.4.1 -R kanywst/rapg -p 'checksums.txt*'
 
 cosign verify-blob \
   --bundle checksums.txt.sigstore.json \
