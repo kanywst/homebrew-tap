@@ -39,6 +39,7 @@ brew install --cask kanywst/tap/y509
 | ---- | ----------- |
 | [`y509`](https://github.com/kanywst/y509) | TUI for viewing and analyzing X.509 certificate chains |
 | [`brtc`](https://github.com/kanywst/brtc) | Cost calculator for offline password brute-force attacks: time and USD per GPU profile |
+| [`rapg`](https://github.com/kanywst/rapg) | **Disabled** (repository archived on 2026-11-08). Can no longer be installed; existing installs keep working but get no updates |
 
 ## Verifying a release
 
