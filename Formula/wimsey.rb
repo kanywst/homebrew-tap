@@ -9,23 +9,23 @@ class Wimsey < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/kanywst/wimsey/releases/download/v0.9.0/wimsey-v0.9.0-aarch64-apple-darwin.tar.gz"
-      sha256 "8eb60f4c14f8bec8fdbacf0e0e386f830fb691a2572e56f7019fb118296072b0"
+      url "https://github.com/kanywst/wimsey/releases/download/v0.10.0/wimsey-v0.10.0-aarch64-apple-darwin.tar.gz"
+      sha256 "efefc1ccc69ddf87cd9193d9b9f7e33ff7b126e79ec86c42629cdad2336a73c5"
     end
     on_intel do
-      url "https://github.com/kanywst/wimsey/releases/download/v0.9.0/wimsey-v0.9.0-x86_64-apple-darwin.tar.gz"
-      sha256 "8f50657359a516ac78d55ae0dc5002830836fc91af4b7ad8426a59f6bfe47b75"
+      url "https://github.com/kanywst/wimsey/releases/download/v0.10.0/wimsey-v0.10.0-x86_64-apple-darwin.tar.gz"
+      sha256 "d7fc879fc873f0db800a7b9f27dc1e011b94933ec9a24b1c2e6fd4f3fb564df2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/kanywst/wimsey/releases/download/v0.9.0/wimsey-v0.9.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a82102d04701335a10c3d9a8384c745f046d682f0a80632dbe1c7ae6c9c08456"
+      url "https://github.com/kanywst/wimsey/releases/download/v0.10.0/wimsey-v0.10.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3e3d6ada6d52ac3a2a33d2ca4cdf6e135b8db8ec054de7551ba7173217ce8a92"
     end
     on_intel do
-      url "https://github.com/kanywst/wimsey/releases/download/v0.9.0/wimsey-v0.9.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3f4b811b6f13187bd4af9490125b4eb3292c1b32b48108746dcad52da6a64d10"
+      url "https://github.com/kanywst/wimsey/releases/download/v0.10.0/wimsey-v0.10.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "11e69392e7f9c6e6c8891c861d7b74306d37847f38f702626118ce85ba2054af"
     end
   end
 
