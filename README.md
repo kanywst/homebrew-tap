@@ -12,7 +12,6 @@ What each upstream release actually ships:
 | `y509`, `brtc`, `spiffe-compliance-checker`, `mcp-opa-authz` | macOS, Linux (x86_64 + arm64) | SPDX 2.3, one per archive | `<name>-<version>-checksums.txt.sigstore.json` |
 | `wimsey` | macOS, Linux (x86_64 + arm64) | SPDX 2.3, one per release | one `.sigstore.json` per artifact |
 | `wtfi2` | macOS only (x86_64 + arm64) | CycloneDX XML (`wtfi2.cdx.xml`) | none, `.sha256` files only |
-| `approval-hub` | macOS, Linux (x86_64 + arm64) | none | none (repo archived at v0.0.1) |
 
 SBOMs on the GoReleaser side come from [`syft`](https://github.com/anchore/syft), whose default output is SPDX, not CycloneDX. Signatures are keyless [Sigstore `cosign`](https://www.sigstore.dev/) over the checksum file, via GitHub OIDC. cosign 3 replaced the `.sig` + `.pem` pair with a single `.sigstore.json` bundle, so verification takes `--bundle`.
 
@@ -34,7 +33,6 @@ brew install --cask kanywst/tap/y509
 | ---- | ----------- |
 | [`spiffe-compliance-checker`](https://github.com/kanywst/spiffe-compliance-checker) | Static MUST-clause compliance checker for SPIFFE artifacts, citing the spec section behind each failure |
 | [`wtfi2`](https://github.com/kanywst/wtfi2) | Network-path diagnostic that pinpoints where a Wi-Fi connection dies (macOS only) |
-| [`approval-hub`](https://github.com/kanywst/approval-hub) | Aggregate Claude Code permission prompts into one TUI (repo archived, last release v0.0.1) |
 
 ## Available casks
 
@@ -46,7 +44,7 @@ brew install --cask kanywst/tap/y509
 
 ## Verifying a release
 
-Every tool in the table above except `wtfi2` and `approval-hub` publishes a checksum file plus a keyless `cosign` signature over it. Verifying the signature and then the digest chains trust from the workflow identity down to the binary.
+Every tool in the table above except `wtfi2` publishes a checksum file plus a keyless `cosign` signature over it. Verifying the signature and then the digest chains trust from the workflow identity down to the binary.
 
 `rapg` names the file plainly:
 
