@@ -8,7 +8,6 @@ What each upstream release actually ships:
 
 | Tool | Platforms | SBOM | Signature |
 | ---- | --------- | ---- | --------- |
-| `rapg` | macOS, Linux, Windows (all x86_64 + arm64, Windows x86_64 only) | SPDX 2.3, one per archive | `checksums.txt.sigstore.json` |
 | `y509`, `brtc`, `spiffe-compliance-checker`, `mcp-opa-authz` | macOS, Linux (x86_64 + arm64) | SPDX 2.3, one per archive | `<name>-<version>-checksums.txt.sigstore.json` |
 | `wimsey` | macOS, Linux (x86_64 + arm64) | SPDX 2.3, one per release | one `.sigstore.json` per artifact |
 | `wtfi2` | macOS only (x86_64 + arm64) | CycloneDX XML (`wtfi2.cdx.xml`) | none, `.sha256` files only |
@@ -40,25 +39,13 @@ brew install --cask kanywst/tap/y509
 | ---- | ----------- |
 | [`y509`](https://github.com/kanywst/y509) | TUI for viewing and analyzing X.509 certificate chains |
 | [`brtc`](https://github.com/kanywst/brtc) | Cost calculator for offline password brute-force attacks: time and USD per GPU profile |
-| [`rapg`](https://github.com/kanywst/rapg) | **Deprecated** (2026-09-29, archiving on or after 2026-12-29). Local-first secret manager for the AI-agent era |
+| [`rapg`](https://github.com/kanywst/rapg) | **Disabled** (repository archived on 2026-11-08). Can no longer be installed; existing installs keep working but get no updates |
 
 ## Verifying a release
 
 Every tool in the table above except `wtfi2` publishes a checksum file plus a keyless `cosign` signature over it. Verifying the signature and then the digest chains trust from the workflow identity down to the binary.
 
-`rapg` names the file plainly:
-
-```bash
-gh release download v0.4.1 -R kanywst/rapg -p 'checksums.txt*'
-
-cosign verify-blob \
-  --bundle checksums.txt.sigstore.json \
-  --certificate-identity-regexp '^https://github.com/kanywst/rapg/' \
-  --certificate-oidc-issuer 'https://token.actions.githubusercontent.com' \
-  checksums.txt
-```
-
-The others prefix it with name and version:
+Each one prefixes it with name and version:
 
 ```bash
 TAG=v1.2.0

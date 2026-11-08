@@ -31,7 +31,7 @@ cask "rapg" do
     skip "Auto-generated on release."
   end
 
-  deprecate! date: "2026-09-29", because: :unmaintained
+  disable! date: "2026-11-08", because: :discontinued
 
   binary "rapg"
 
