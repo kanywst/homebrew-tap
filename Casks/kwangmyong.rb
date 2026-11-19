@@ -6,25 +6,25 @@ cask "kwangmyong" do
     end
   end
 
-  version "0.4.3"
+  version "0.5.0"
 
   on_macos do
     on_arm do
-      sha256 "4fc5fd99a3d272b4382acb80e51ac3cfb43372552f4b1e35b51bbea2b9f353f3"
+      sha256 "b3ed70c23851cf9b268ccf07a7dc9555cc675045334cb55403e8a92d42e4c087"
       url "https://github.com/kanywst/kwangmyong/releases/download/v#{version}/kwangmyong_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "a036d3da15b571ffc45beef7cd603624285711df0a1e078d54536b4e7a13c0a3"
+      sha256 "f0e2a8325a560a305384e7cf04f34f58d3ab9edd10c297c135a110459fc73958"
       url "https://github.com/kanywst/kwangmyong/releases/download/v#{version}/kwangmyong_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "627b1ade5a66b21cd154843d4a2560d204339cad8bd3f225f3d1f7c9ca967e4b"
+      sha256 "e12c60f70e19221a38da54654e61cc67b665712f15be5bcb2c841fc5380cd635"
       url "https://github.com/kanywst/kwangmyong/releases/download/v#{version}/kwangmyong_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "c639b7ced1f23d17cb134fac9d324f5a20cc4aefe2fbd632794d206f7d00dc29"
+      sha256 "86d77380bce58af8eaab11380435bf93c67da1605ac299266e6f023632aae028"
       url "https://github.com/kanywst/kwangmyong/releases/download/v#{version}/kwangmyong_#{version}_linux_amd64.tar.gz"
     end
   end
