@@ -1,8 +1,8 @@
 class Wtfi3 < Formula
   desc "Visualize who talks to whom on a WiFi network you administer"
   homepage "https://github.com/kanywst/wtfi3"
-  url "https://github.com/kanywst/wtfi3/archive/refs/tags/v0.8.0.tar.gz"
-  sha256 "7ba160431861eb6a757a24c662c58d0cbf8d4e1d050c7095356052d4ad39d644"
+  url "https://github.com/kanywst/wtfi3/archive/refs/tags/v0.9.0.tar.gz"
+  sha256 "11c072d3ba04c1106d7482dbdf5ddd7e0db8a4fd1aa8acd63fdfd6b7bc4f5058"
   license "MIT"
   head "https://github.com/kanywst/wtfi3.git", branch: "main"
 
